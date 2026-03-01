@@ -1,0 +1,14 @@
+.splash-hidden { display: none !important; }
+#splash { position: fixed; inset: 0; background: #0f172a; z-index: 10000; display: flex; align-items: center; justify-content: center; transition: 1s; }
+.loader-logo { text-align: center; animation: pulse 1.5s infinite; }
+
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); z-index: 9999; align-items: center; justify-content: center; }
+.modal-content { background: var(--bg); padding: 40px; border-radius: 25px; width: 90%; max-width: 450px; border: 2px solid var(--accent); position: relative; }
+.close { position: absolute; top: 20px; left: 20px; font-size: 30px; cursor: pointer; color: var(--accent); }
+.modal-content input, .modal-content select { width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 10px; border: 1px solid var(--accent); background: transparent; color: var(--text); }
+
+.whatsapp-fab { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 999; transition: 0.3s; }
+.whatsapp-fab:hover { transform: scale(1.1) rotate(10deg); }
+.whatsapp-fab img { width: 35px; }
+
+@keyframes pulse { 0% {transform: scale(0.95);} 50% {transform: scale(1.05);} 100% {transform: scale(0.95);} }
